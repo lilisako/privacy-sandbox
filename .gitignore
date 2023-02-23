@@ -1,0 +1,4 @@
+localhost.pem
+localhost-key.pem
+.env
+node_modules/
