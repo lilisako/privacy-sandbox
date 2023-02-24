@@ -23,3 +23,10 @@ https://localhost:8080/
 - [Privacy Sandbox](https://www.chromium.org/Home/chromium-privacy/privacy-sandbox)
 - [Buyer guide: join interest groups and generate bids](https://developer.chrome.com/docs/privacy-sandbox/fledge-api/interest-groups/)
 - [FLEDGE API developer guide](https://developer.chrome.com/en/blog/fledge-api/)
+
+### Todo
+- [x] joinAdInterestGroup
+- [x] leaveAdInterestGroup
+- [x] runAdAuction
+- [x] reportWin
+- [x] reportResult
