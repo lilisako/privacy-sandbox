@@ -18,6 +18,8 @@ app.use(express.static('public', {
         // Set the origin trial token
         res.set('Origin-Trial', process.env.TOKEN);
         res.set('X-Allow-FLEDGE', 'true');
+        res.set('Sec-Fetch-Dest', 'fencedframe');
+        res.set('Supports-Loading-Mode', 'fenced-frame');
     }
 }));
 
@@ -38,6 +40,8 @@ app.use('/static', express.static('static', {
         // Set the origin trial token
         res.set('Origin-Trial', process.env.TOKEN);
         res.set('X-Allow-FLEDGE', 'true');
+        res.set('Sec-Fetch-Dest', 'fencedframe');
+        res.set('Supports-Loading-Mode', 'fenced-frame');
     }
 }));
 

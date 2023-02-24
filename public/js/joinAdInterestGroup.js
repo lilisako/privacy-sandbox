@@ -22,6 +22,11 @@ const interestGroup = {
     ],
 };
 
+if (window.HTMLFencedFrameElement) {
+    console.log("fencedframe is supported");
+} else {
+    console.log("fencedframe is not supported");
+}
 // Join the interest group which will be used for ad targeting
 // This will be expired after 30 days
 navigator.joinAdInterestGroup(interestGroup, 30 * 24 * 60 * 60).then(() => {
