@@ -1,5 +1,5 @@
-# Privacy Sandbox Demo
-This repository contains a demo of the Privacy Sandbox API. It is a simple web application that allows you to test the API in a browser.
+# FLEDGE Demo
+This repository contains a demo of the FLEDGE API. It is a simple web application that allows you to test the API in a browser.
 
 1. First, you need to join an interest group. You can do this by visiting the cafe page or the travel page.
 
