@@ -1,30 +1,33 @@
-## Privacy Sandbox Demo
+# Privacy Sandbox Demo
 This repository contains a demo of the Privacy Sandbox API. It is a simple web application that allows you to test the API in a browser.
 
-### Setup
-1. You have to prepare localhost certificates for the demo to work. You can follow this guide (https://web.dev/how-to-use-local-https/) to generate a localhost-key.pem and localhost.pem.
+1. First, you need to join an interest group. You can do this by visiting the cafe page or the travel page.
 
-2. You have to setup the origin trial token. You can follow this guide (https://web.dev/origin-trials/) to generate a token. After generating a token, you have to add it to .env file in the root directory of the project.
-```env
-TOKEN="SAMPLE_TOKEN"
-```
+2. After visiting either one of the pages, you can visit the publisher website and see the related ad. The ad auction was executed on your device and the ad was rendered inside fenced frame tag. In this way, DSP won't be able to track you.
 
-### How to start the demo
-Run the following commands in the root directory of the project:
+## Screenrecording
+
+## How to start the demo
+1. Make sure to turn on the flag `#enable-fenced-frames` and `#privacy-sandbox-ads-apis` in `chrome://flags/` on Chrome browser before running the demo. 
+- [chrome://flags/#enable-fenced-frames](chrome://flags/#enable-fenced-frames)
+- [chrome://flags/#privacy-sandbox-ads-apis](chrome://flags/#privacy-sandbox-ads-apis)
+
+
+2. Run the following command in the root directory of the project:
 ```sh
-node ./server.js
+npm run start
 ```
 and open the following URL in your browser:
 ```sh
 https://localhost:8080/
 ```
 
-### Useful links
-- [Privacy Sandbox](https://www.chromium.org/Home/chromium-privacy/privacy-sandbox)
+## Useful links
 - [Buyer guide: join interest groups and generate bids](https://developer.chrome.com/docs/privacy-sandbox/fledge-api/interest-groups/)
 - [FLEDGE API developer guide](https://developer.chrome.com/en/blog/fledge-api/)
+- [Privacy Sandbox](https://www.chromium.org/Home/chromium-privacy/privacy-sandbox)
 
-### Todo
+## Todo
 - [x] joinAdInterestGroup
 - [x] leaveAdInterestGroup
 - [x] runAdAuction
