@@ -7,6 +7,11 @@ This repository contains a demo of the Privacy Sandbox API. It is a simple web a
 
 ## Screenrecording
 
+https://user-images.githubusercontent.com/33516104/221344663-5167c7f4-9df3-4478-bfef-866a51741fb9.mov
+
+
+
+
 ## How to start the demo
 1. Make sure to turn on the flag `#enable-fenced-frames` and `#privacy-sandbox-ads-apis` in `chrome://flags/` on Chrome browser before running the demo. 
 - [chrome://flags/#enable-fenced-frames](chrome://flags/#enable-fenced-frames)
