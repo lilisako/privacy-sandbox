@@ -24,15 +24,15 @@ app.use(express.static('public', {
 }));
 
 app.get('/', (_, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/index.html'));
+    res.sendFile(path.join(__dirname + '/static/html/index.html'));
 });
 
 app.get('/leave', (_, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/leave_ig.html'));
+    res.sendFile(path.join(__dirname + '/static/html/leave_ig.html'));
 });
 
 app.get('/publisher', (_, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/publisher.html'));
+    res.sendFile(path.join(__dirname + '/static/html/publisher.html'));
 });
 
 app.use('/static', express.static('static', {

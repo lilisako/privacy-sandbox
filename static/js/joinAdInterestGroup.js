@@ -4,7 +4,7 @@ const owner = 'https://localhost:8080'
 const interestGroup = {
     owner: owner, // The owner of the interest group
     name: 'travel', // The name of the interest group
-    biddingLogicUrl: `${owner}/static/bidding_logic.js`,
+    biddingLogicUrl: `${owner}/static/js/bidding_logic.js`,
     // biddingWasmHelperUrl: `${owner}/bidding_logic.wasm`,
     // dailyUpdateUrl: `${owner}/daily_update.js`,
     // trustedBiddingSignalsUrl: `${owner}/trusted_bidding_signals.js`,
@@ -12,11 +12,11 @@ const interestGroup = {
     userBiddingSignals: {key1: 'value1', key2: 'value2'},
     ads: [ 
         {
-            renderUrl: `${owner}/static/ad1.html`,
+            renderUrl: `${owner}/static/html/ad1.html`,
             metadata: {key1: 'value1', key2: 'value2'},
         },
         {
-            renderUrl: `${owner}/static/ad2.html`,
+            renderUrl: `${owner}/static/html/ad2.html`,
             metadata: {key1: 'value1', key2: 'value2'},
         },
     ],

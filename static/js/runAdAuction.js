@@ -3,7 +3,7 @@ const sspUrl = 'https://localhost:8080';
 const dspUrl = 'https://localhost:8080';
 const auctionConfig = {
     seller: `${sspUrl}`,
-    decisionLogicUrl: `${sspUrl}/static/decision-logic.js`,
+    decisionLogicUrl: `${sspUrl}/static/js/decision-logic.js`,
     interestGroupBuyers: [dspUrl],
     auctionSignals: { isControversial: true },
     sellerSignals: { key: 'value' },
