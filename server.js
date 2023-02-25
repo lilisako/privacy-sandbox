@@ -27,6 +27,10 @@ app.get('/', (_, res) => {
     res.sendFile(path.join(__dirname + '/static/html/index.html'));
 });
 
+app.get('/advertiser2', (_, res) => {
+    res.sendFile(path.join(__dirname + '/static/html/advertiser2.html'));
+});
+
 app.get('/leave', (_, res) => {
     res.sendFile(path.join(__dirname + '/static/html/leave_ig.html'));
 });

@@ -3,7 +3,7 @@ const owner = 'https://localhost:8080'
 // Define the interest group
 const interestGroup = {
     owner: owner, // The owner of the interest group
-    name: 'travel', // The name of the interest group
+    name: 'cafe', // The name of the interest group
     biddingLogicUrl: `${owner}/static/js/bidding_logic.js`,
     // biddingWasmHelperUrl: `${owner}/bidding_logic.wasm`,
     // dailyUpdateUrl: `${owner}/daily_update.js`,
@@ -11,10 +11,6 @@ const interestGroup = {
     trustedBiddingSignalsKeys: ['key1', 'key2'],
     userBiddingSignals: {key1: 'value1', key2: 'value2'},
     ads: [ 
-        {
-            renderUrl: `${owner}/static/html/ad1.html`,
-            metadata: {key1: 'value1', key2: 'value2'},
-        },
         {
             renderUrl: `${owner}/static/html/ad2.html`,
             metadata: {key1: 'value1', key2: 'value2'},
@@ -28,10 +24,10 @@ if (window.HTMLFencedFrameElement) {
     console.log("fencedframe is not supported");
 }
 
-// Leave cafe interest group
+// Leave the interest group
 // Since I have not implemented the bidding / decision logic for multiple interest groups,
 // make sure to leave the interest group before joining another interest group
-navigator.leaveAdInterestGroup({owner: owner, name: 'cafe'}).then(() => {
+navigator.leaveAdInterestGroup({owner: owner, name: 'travel'}).then(() => {
     console.log('Left interest group');
 }).catch((err) => {
     console.log('Failed to leave interest group', err);

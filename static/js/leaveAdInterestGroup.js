@@ -15,10 +15,6 @@ const interestGroup = {
             renderUrl: `${owner}/static/html/ad1.html`,
             metadata: {key1: 'value1', key2: 'value2'},
         },
-        {
-            renderUrl: `${owner}/static/html/ad2.html`,
-            metadata: {key1: 'value1', key2: 'value2'},
-        },
     ],
 };
 
