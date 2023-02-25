@@ -1,0 +1,8 @@
+@font-face {
+  font-family: vt;
+  src: url('./VT323-Regular.ttf');
+}
+
+* {
+  font-family: vt;
+}
